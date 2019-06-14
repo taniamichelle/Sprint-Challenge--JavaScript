@@ -30,6 +30,8 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+Both array methods iterate over all the data, but .map returns a new array and requires a return statement, while .forEach does NOT return a new array and requires at least two parameters: a callback and a currentValue
+
 2. What is the difference between a function and a method?
 
 3. What is closure?
