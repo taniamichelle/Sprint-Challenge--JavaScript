@@ -30,15 +30,26 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
-Both array methods iterate over all the data, but .map returns a new array and requires a return statement, while .forEach does NOT return a new array and requires at least two parameters: a callback and a currentValue
+Both array methods iterate over all the data, but .map returns a new array and requires a return statement, while .forEach does NOT return a new array and requires at least two parameters (and hence two arguments): a callback and a currentValue.
 
 2. What is the difference between a function and a method?
 
+functions are explicitly passed data and called by name to return a value while methods are essentially functions WITHIN objects that are implicitly passed the object on which it was called and can therefore can operate on the data within a class
+
 3. What is closure?
+
+closures are placeholders to store information which we'll need and use later
 
 4. Describe the four rules of the 'this' keyword.
 
+   1) Window/Global Object: in global scope, .this will refer to the window/console Object
+   2) Implicit Binding: allows us to call the object directly left of the dot; used with object literals 
+   3) New: when you invoke a function with 'new' followed by an object name with the first letter capitalized, .this will refer to the newly constructed object
+   4) Explicit: allows us to explicitly state what .this refers to in any given function
+
 5. Why do we need super() in an extended class?
+
+super serves the purpose of the this keyword AND methods. It removes the need to use Parent.call() and Object.create()) that are used in prototypes
 
 ## Project Set up
 
