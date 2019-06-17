@@ -6,10 +6,10 @@ class CuboidMaker {
         this.height = properties.height;
     }
     volume() {
-        return `The volume of this cuboid is: (${this.length} * ${this.width} * ${this.height})`;
+        return `The volume of this cuboid is: ${this.length * this.width * this.height}`;
     }
     surfaceArea() {
-        return `The surface area of this cuboid is: 2 * (${this.length} * ${this.width} + ${this.length} * ${this.height} + ${this.width} * ${this.height})`;
+        return `The surface area of this cuboid is: ${2 * this.length * this.width + this.length * this.height + this.width * this.height}`;
     }
 };
 
